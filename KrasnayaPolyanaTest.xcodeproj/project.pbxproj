@@ -9,23 +9,20 @@
 /* Begin PBXBuildFile section */
 		FD3D9EC725A2F51E00D46F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9EC625A2F51E00D46F8C /* AppDelegate.swift */; };
 		FD3D9EC925A2F51E00D46F8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9EC825A2F51E00D46F8C /* SceneDelegate.swift */; };
-		FD3D9ECB25A2F51E00D46F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9ECA25A2F51E00D46F8C /* ViewController.swift */; };
-		FD3D9ECE25A2F51E00D46F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3D9ECC25A2F51E00D46F8C /* Main.storyboard */; };
+		FD3D9ECB25A2F51E00D46F8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9ECA25A2F51E00D46F8C /* MainViewController.swift */; };
 		FD3D9ED025A2F52200D46F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3D9ECF25A2F52200D46F8C /* Assets.xcassets */; };
 		FD3D9ED325A2F52200D46F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3D9ED125A2F52200D46F8C /* LaunchScreen.storyboard */; };
 		FD3D9EDE25A2F52200D46F8C /* KrasnayaPolyanaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9EDD25A2F52200D46F8C /* KrasnayaPolyanaTestTests.swift */; };
-		FD3D9EE925A2F52200D46F8C /* KrasnayaPolyanaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9EE825A2F52200D46F8C /* KrasnayaPolyanaTestUITests.swift */; };
+		FD3D9F0425A2F5B200D46F8C /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9F0325A2F5B200D46F8C /* MainModel.swift */; };
+		FD3D9F0925A2F5BF00D46F8C /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9F0825A2F5BF00D46F8C /* MainPresenter.swift */; };
+		FD3D9F1225A2F69A00D46F8C /* WeatherNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9F1125A2F69A00D46F8C /* WeatherNetworking.swift */; };
+		FD3D9F1E25A2FF0E00D46F8C /* WeatherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9F1C25A2FF0E00D46F8C /* WeatherViewCell.swift */; };
+		FD3D9F1F25A2FF0E00D46F8C /* WeatherViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3D9F1D25A2FF0E00D46F8C /* WeatherViewCell.xib */; };
+		FD3D9F3725A315F200D46F8C /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9F3625A315F200D46F8C /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FD3D9EDA25A2F52200D46F8C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD3D9EBB25A2F51E00D46F8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FD3D9EC225A2F51E00D46F8C;
-			remoteInfo = KrasnayaPolyanaTest;
-		};
-		FD3D9EE525A2F52200D46F8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD3D9EBB25A2F51E00D46F8C /* Project object */;
 			proxyType = 1;
@@ -38,17 +35,19 @@
 		FD3D9EC325A2F51E00D46F8C /* KrasnayaPolyanaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrasnayaPolyanaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3D9EC625A2F51E00D46F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD3D9EC825A2F51E00D46F8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD3D9ECA25A2F51E00D46F8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD3D9ECD25A2F51E00D46F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD3D9ECA25A2F51E00D46F8C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FD3D9ECF25A2F52200D46F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3D9ED225A2F52200D46F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD3D9ED425A2F52200D46F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3D9ED925A2F52200D46F8C /* KrasnayaPolyanaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrasnayaPolyanaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3D9EDD25A2F52200D46F8C /* KrasnayaPolyanaTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrasnayaPolyanaTestTests.swift; sourceTree = "<group>"; };
 		FD3D9EDF25A2F52200D46F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD3D9EE425A2F52200D46F8C /* KrasnayaPolyanaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrasnayaPolyanaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD3D9EE825A2F52200D46F8C /* KrasnayaPolyanaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrasnayaPolyanaTestUITests.swift; sourceTree = "<group>"; };
-		FD3D9EEA25A2F52200D46F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3D9F0325A2F5B200D46F8C /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		FD3D9F0825A2F5BF00D46F8C /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		FD3D9F1125A2F69A00D46F8C /* WeatherNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworking.swift; sourceTree = "<group>"; };
+		FD3D9F1C25A2FF0E00D46F8C /* WeatherViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewCell.swift; sourceTree = "<group>"; };
+		FD3D9F1D25A2FF0E00D46F8C /* WeatherViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewCell.xib; sourceTree = "<group>"; };
+		FD3D9F3625A315F200D46F8C /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD3D9EE125A2F52200D46F8C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +73,6 @@
 			children = (
 				FD3D9EC525A2F51E00D46F8C /* KrasnayaPolyanaTest */,
 				FD3D9EDC25A2F52200D46F8C /* KrasnayaPolyanaTestTests */,
-				FD3D9EE725A2F52200D46F8C /* KrasnayaPolyanaTestUITests */,
 				FD3D9EC425A2F51E00D46F8C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +82,6 @@
 			children = (
 				FD3D9EC325A2F51E00D46F8C /* KrasnayaPolyanaTest.app */,
 				FD3D9ED925A2F52200D46F8C /* KrasnayaPolyanaTestTests.xctest */,
-				FD3D9EE425A2F52200D46F8C /* KrasnayaPolyanaTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +89,12 @@
 		FD3D9EC525A2F51E00D46F8C /* KrasnayaPolyanaTest */ = {
 			isa = PBXGroup;
 			children = (
-				FD3D9EC625A2F51E00D46F8C /* AppDelegate.swift */,
-				FD3D9EC825A2F51E00D46F8C /* SceneDelegate.swift */,
-				FD3D9ECA25A2F51E00D46F8C /* ViewController.swift */,
-				FD3D9ECC25A2F51E00D46F8C /* Main.storyboard */,
-				FD3D9ECF25A2F52200D46F8C /* Assets.xcassets */,
-				FD3D9ED125A2F52200D46F8C /* LaunchScreen.storyboard */,
-				FD3D9ED425A2F52200D46F8C /* Info.plist */,
+				FD3D9EFC25A2F55100D46F8C /* App */,
+				FD3D9EFD25A2F55F00D46F8C /* Resources */,
+				FD3D9F3525A3158600D46F8C /* ModuleBuilder */,
+				FD3D9F1025A2F68000D46F8C /* NetworkingService */,
+				FD3D9F0125A2F59300D46F8C /* Modules */,
+				FD3D9F1A25A2FEE300D46F8C /* View */,
 			);
 			path = KrasnayaPolyanaTest;
 			sourceTree = "<group>";
@@ -119,13 +108,98 @@
 			path = KrasnayaPolyanaTestTests;
 			sourceTree = "<group>";
 		};
-		FD3D9EE725A2F52200D46F8C /* KrasnayaPolyanaTestUITests */ = {
+		FD3D9EFC25A2F55100D46F8C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				FD3D9EE825A2F52200D46F8C /* KrasnayaPolyanaTestUITests.swift */,
-				FD3D9EEA25A2F52200D46F8C /* Info.plist */,
+				FD3D9EC625A2F51E00D46F8C /* AppDelegate.swift */,
+				FD3D9EC825A2F51E00D46F8C /* SceneDelegate.swift */,
+				FD3D9ED425A2F52200D46F8C /* Info.plist */,
 			);
-			path = KrasnayaPolyanaTestUITests;
+			path = App;
+			sourceTree = "<group>";
+		};
+		FD3D9EFD25A2F55F00D46F8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9ED125A2F52200D46F8C /* LaunchScreen.storyboard */,
+				FD3D9ECF25A2F52200D46F8C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD3D9F0125A2F59300D46F8C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9F0225A2F59A00D46F8C /* MainModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FD3D9F0225A2F59A00D46F8C /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9F2B25A3119700D46F8C /* Model */,
+				FD3D9F2F25A311A300D46F8C /* Presenter */,
+				FD3D9F3225A311AA00D46F8C /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		FD3D9F1025A2F68000D46F8C /* NetworkingService */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9F1125A2F69A00D46F8C /* WeatherNetworking.swift */,
+			);
+			path = NetworkingService;
+			sourceTree = "<group>";
+		};
+		FD3D9F1A25A2FEE300D46F8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9F1B25A2FEED00D46F8C /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD3D9F1B25A2FEED00D46F8C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9F1C25A2FF0E00D46F8C /* WeatherViewCell.swift */,
+				FD3D9F1D25A2FF0E00D46F8C /* WeatherViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FD3D9F2B25A3119700D46F8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9F0325A2F5B200D46F8C /* MainModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD3D9F2F25A311A300D46F8C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9F0825A2F5BF00D46F8C /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FD3D9F3225A311AA00D46F8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9ECA25A2F51E00D46F8C /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD3D9F3525A3158600D46F8C /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D9F3625A315F200D46F8C /* ModuleBuilder.swift */,
+			);
+			path = ModuleBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +240,6 @@
 			productReference = FD3D9ED925A2F52200D46F8C /* KrasnayaPolyanaTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FD3D9EE325A2F52200D46F8C /* KrasnayaPolyanaTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FD3D9EF325A2F52200D46F8C /* Build configuration list for PBXNativeTarget "KrasnayaPolyanaTestUITests" */;
-			buildPhases = (
-				FD3D9EE025A2F52200D46F8C /* Sources */,
-				FD3D9EE125A2F52200D46F8C /* Frameworks */,
-				FD3D9EE225A2F52200D46F8C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FD3D9EE625A2F52200D46F8C /* PBXTargetDependency */,
-			);
-			name = KrasnayaPolyanaTestUITests;
-			productName = KrasnayaPolyanaTestUITests;
-			productReference = FD3D9EE425A2F52200D46F8C /* KrasnayaPolyanaTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +253,6 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					FD3D9ED825A2F52200D46F8C = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = FD3D9EC225A2F51E00D46F8C;
-					};
-					FD3D9EE325A2F52200D46F8C = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = FD3D9EC225A2F51E00D46F8C;
 					};
@@ -221,7 +273,6 @@
 			targets = (
 				FD3D9EC225A2F51E00D46F8C /* KrasnayaPolyanaTest */,
 				FD3D9ED825A2F52200D46F8C /* KrasnayaPolyanaTestTests */,
-				FD3D9EE325A2F52200D46F8C /* KrasnayaPolyanaTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,19 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD3D9ED325A2F52200D46F8C /* LaunchScreen.storyboard in Resources */,
+				FD3D9F1F25A2FF0E00D46F8C /* WeatherViewCell.xib in Resources */,
 				FD3D9ED025A2F52200D46F8C /* Assets.xcassets in Resources */,
-				FD3D9ECE25A2F51E00D46F8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FD3D9ED725A2F52200D46F8C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD3D9EE225A2F52200D46F8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3D9ECB25A2F51E00D46F8C /* ViewController.swift in Sources */,
+				FD3D9F0925A2F5BF00D46F8C /* MainPresenter.swift in Sources */,
+				FD3D9F0425A2F5B200D46F8C /* MainModel.swift in Sources */,
+				FD3D9ECB25A2F51E00D46F8C /* MainViewController.swift in Sources */,
+				FD3D9F3725A315F200D46F8C /* ModuleBuilder.swift in Sources */,
 				FD3D9EC725A2F51E00D46F8C /* AppDelegate.swift in Sources */,
+				FD3D9F1E25A2FF0E00D46F8C /* WeatherViewCell.swift in Sources */,
 				FD3D9EC925A2F51E00D46F8C /* SceneDelegate.swift in Sources */,
+				FD3D9F1225A2F69A00D46F8C /* WeatherNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +321,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD3D9EE025A2F52200D46F8C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD3D9EE925A2F52200D46F8C /* KrasnayaPolyanaTestUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,22 +329,9 @@
 			target = FD3D9EC225A2F51E00D46F8C /* KrasnayaPolyanaTest */;
 			targetProxy = FD3D9EDA25A2F52200D46F8C /* PBXContainerItemProxy */;
 		};
-		FD3D9EE625A2F52200D46F8C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FD3D9EC225A2F51E00D46F8C /* KrasnayaPolyanaTest */;
-			targetProxy = FD3D9EE525A2F52200D46F8C /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FD3D9ECC25A2F51E00D46F8C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD3D9ECD25A2F51E00D46F8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FD3D9ED125A2F52200D46F8C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,7 +466,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z73YGZ4UAM;
-				INFOPLIST_FILE = KrasnayaPolyanaTest/Info.plist;
+				INFOPLIST_FILE = KrasnayaPolyanaTest/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kalinin.weather.KrasnayaPolyanaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,7 +486,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z73YGZ4UAM;
-				INFOPLIST_FILE = KrasnayaPolyanaTest/Info.plist;
+				INFOPLIST_FILE = KrasnayaPolyanaTest/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kalinin.weather.KrasnayaPolyanaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -513,46 +543,6 @@
 			};
 			name = Release;
 		};
-		FD3D9EF425A2F52200D46F8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z73YGZ4UAM;
-				INFOPLIST_FILE = KrasnayaPolyanaTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kalinin.weather.KrasnayaPolyanaTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KrasnayaPolyanaTest;
-			};
-			name = Debug;
-		};
-		FD3D9EF525A2F52200D46F8C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z73YGZ4UAM;
-				INFOPLIST_FILE = KrasnayaPolyanaTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kalinin.weather.KrasnayaPolyanaTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KrasnayaPolyanaTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +569,6 @@
 			buildConfigurations = (
 				FD3D9EF125A2F52200D46F8C /* Debug */,
 				FD3D9EF225A2F52200D46F8C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FD3D9EF325A2F52200D46F8C /* Build configuration list for PBXNativeTarget "KrasnayaPolyanaTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD3D9EF425A2F52200D46F8C /* Debug */,
-				FD3D9EF525A2F52200D46F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
